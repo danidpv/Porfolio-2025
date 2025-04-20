@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Fullstack Developer",
+    company: "Codearts (Practicas)",
+    description:
+      "Desarrollo de Aplicaciones web con Angular18, Docker compose, Symfony, Scrum. Consiguiendo un 10-15% de mejora de rendimiento en sus aplicaciones web.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
